@@ -7,6 +7,6 @@ import (
 
 func LoadDatabase() {
 	database.Connect()
-	database.Database.AutoMigrate(&models.User{})
-	database.Database.AutoMigrate(&models.Entry{})
+	database.DB.AutoMigrate(&models.User{})
+	database.DB.AutoMigrate(&models.Entry{})
 }
